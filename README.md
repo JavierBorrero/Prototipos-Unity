@@ -1,3 +1,3 @@
 # Prototipos Unity
 
-Actividades realizadas durante el CERVYV en la asignatura de Motores
+Actividades realizadas durante el Curso de Especialización de Videojuegos y Realidad Virtual en la asignatura de Motores
