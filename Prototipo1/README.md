@@ -1,6 +1,6 @@
 # Prototipo 1
 
-Como primer proyecto de la asignatura, esta actividad trata lo siguiente:
+Primer proyecto de la asignatura, un pequeño juego sobre coches que se mueven en una carretera esquivando obstáculos y otros vehículos. Esta actividad trata lo siguiente:
 
 **Sobre el motor:**
 
