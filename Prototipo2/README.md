@@ -6,7 +6,7 @@ Lo primero es añadir el `GameObject` del jugador y ponerle como componente el s
 
 También tenemos que crear un *prefab* en la escena con el proyectil, y luego lo añadimos a la carpeta *Prefabs*. Recuerda asignar el prefab al script del jugador en el editor.
 
-```
+```csharp
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
@@ -45,7 +45,7 @@ public class PlayerController : MonoBehaviour
 
 Creamos el script para controlar el movimiento del proyectil y lo añadimos al prefab:
 
-```
+```csharp
 public class MoveForward : MonoBehaviour
 {
     public float speed = 40;
@@ -67,7 +67,7 @@ Ahora vamos a convertir los objetivos en prefabs de forma que los vamos a poder 
 
 Tenemos que destruir los *GameObjects* que se salen de los límites del juego ya que ocupan memoria y recursos. Para ello vamos a crear el script `DestroyOutOfBounds` y lo añadimos como componente del proyectil y de los objetivos:
 
-```
+```csharp
 public class DestroyOutOfBounds : MonoBehaviour
 {
     private float topBound = 30;
@@ -94,7 +94,7 @@ En este punto vamos a programar que los objetivos aparezcan aleatoriamente:
 - Creamos un objetivo vacío y lo llamamos `SpawnManager`.
 - A continuación, creamos un script y lo llamamos `SpawnManager`, y lo añadimos al objeto vacío.
 
-```
+```csharp
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
@@ -132,7 +132,7 @@ Repetimos este proceso para el proyectil. Además, a éste debemos añadirle un 
 
 Una vez que tenemos los `Box Colliders` con sus *triggers* marcados debemos escribir un script para destruir los objetos con los impactos. Lo creamos con el nombre `DetectCollisions`:
 
-```
+```csharp
 public class detectCollisions : MonoBehaviour
 {
     void Start(){}
@@ -148,5 +148,3 @@ public class detectCollisions : MonoBehaviour
     }
 }
 ```
-
-
